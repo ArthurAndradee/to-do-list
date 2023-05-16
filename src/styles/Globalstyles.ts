@@ -13,7 +13,7 @@ export default createGlobalStyle`
         width: 100%;
     }
     html {
-        background: var(--white);
+        background-color: #D8D8D8;
     }
     :root {
     --white: #FFFFFF;
