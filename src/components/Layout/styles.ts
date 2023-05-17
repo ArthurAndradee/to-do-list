@@ -13,14 +13,3 @@ border-radius: 15px;
 
 background-color: #D8D8D8;
 `;
-
-export const Section = styled.div`
-
-position: absolute; 
-top: 0; 
-left: 0; 
-height: 100%; width: 100%;
-
-background-color: #D8D8D8;
-
-`;

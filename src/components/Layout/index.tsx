@@ -1,13 +1,15 @@
 import React from 'react';
+
 import { Container, } from './styles';
+import CreateTaskButton from '../createTaskButton';
+
+import Title from '../title';
 
 const Layout: React.FC = () => {
   return (
       <Container>
-          {/* <Header>To do List<Header /> */}
-            {/* <Title /> */}
-            {/* <CreateTaskButton /> */}
-          {/* </Header> */}
+            <Title />
+            <CreateTaskButton />
       </Container>
   )
 }
