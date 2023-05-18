@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, } from './styles';
+import { Container, Header } from './styles';
 import CreateTaskButton from '../createTaskButton';
 
 import Title from '../title';
@@ -8,8 +8,10 @@ import Title from '../title';
 const Layout: React.FC = () => {
   return (
       <Container>
+        <Header>
             <Title />
             <CreateTaskButton />
+        </Header>
       </Container>
   )
 }

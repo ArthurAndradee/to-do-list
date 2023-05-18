@@ -1,11 +1,12 @@
 import React from 'react';
-import { Header } from './styles';
+import { Container } from './styles';
 
-const title: React.FC = () => {
+const taskButton: React.FC = () => {
   return (
-    <Header>
-    </Header>
+    <Container>
+      <div></div>
+    </Container>
   );
 }
 
-export default title;
+export default taskButton;

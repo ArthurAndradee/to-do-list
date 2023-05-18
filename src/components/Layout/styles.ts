@@ -13,3 +13,14 @@ border-radius: 15px;
 
 background-color: #D8D8D8;
 `;
+
+export const Header = styled.div`
+
+height: 15%;
+width: 96%;
+
+border: 4px solid black;
+
+margin-left: 2%;
+margin-top: 2%;
+`;
