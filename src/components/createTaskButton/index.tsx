@@ -4,7 +4,7 @@ import { Container } from './styles';
 const taskButton: React.FC = () => {
   return (
     <Container>
-      <div></div>
+      Add a new task +
     </Container>
   );
 }
