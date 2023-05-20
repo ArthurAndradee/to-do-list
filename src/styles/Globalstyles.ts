@@ -6,6 +6,10 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
+
+        &::before, &::after {
+            box-sizing: border-box;
+        }
     }
     html, body, #root {
         max-height: 100vh;

@@ -1,13 +1,18 @@
 import React from 'react';
 
-import { Container, Checkbox, Task, } from './styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
+
+import { Container, Checkbox, Task, Trashbin } from './styles';
 
 const task: React.FC = () => {
   return (
     <Container>
         <Checkbox type='checkbox' />
-        <Task>AA</Task>
-        {/* <Trashbin /> */}
+        <Task>Harder, Better, Faster, Stronger</Task>
+        <Trashbin>
+          <FontAwesomeIcon icon={faTrashCan} />
+        </Trashbin>
     </Container>
   );
 }

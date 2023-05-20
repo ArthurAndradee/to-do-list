@@ -11,30 +11,69 @@ export const Container = styled.div`
   box-shadow: 0px 0px 2px 0px black;
 
   background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Checkbox = styled.input`
-  width: 30px;
-  height: 30px;
-
-  margin-left: 5%;
-  margin-top: 2.5%;
-
   border-radius: 5px;
 
-  border: 1px solid #ddd;
+  margin-right: 3%;
+
+
+  position: relative;
+
+  width: 1.7em;
+  height: 1.7em;
+  color: black;
+
+  border: 1px solid gray;
+  border-radius: 4px;
+
   appearance: none;
 
+  outline: 0;
+
   cursor: pointer;
-`;
+  
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 2px;
+    left: 6px;
+    width: 8px;
+    height: 14px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  &:checked {
+    color: white;
+    border-color: #7e25be;
+    background: #7e25be;
+    &::before {
+      opacity: 1;
+    }
+  }
+  `;
 
 export const Task = styled.div`
-  width: 50%;
+  width: 80%;
 
-  margin-right: 25%;
-  margin-top: 3.5%;
+  text-align: center;
+`;
 
-  border: 1px solid black;
+export const Trashbin = styled.div`
+  height: 25px;
+  width: 25px;
 
-  float: right;
+  margin-left: 3%;
+
+  cursor: pointer;
 `;
