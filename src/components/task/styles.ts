@@ -76,4 +76,10 @@ export const Trashbin = styled.div`
   margin-left: 3%;
 
   cursor: pointer;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: red;
+  }
 `;
