@@ -5,8 +5,8 @@ import { Container, Checkbox, Task, } from './styles';
 const task: React.FC = () => {
   return (
     <Container>
-        <Checkbox />
-        <Task />
+        <Checkbox type='checkbox' />
+        <Task>AA</Task>
         {/* <Trashbin /> */}
     </Container>
   );
