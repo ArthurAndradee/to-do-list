@@ -11,7 +11,7 @@ const Layout: React.FC = () => {
       <Container>
         <Header>
             <Title />
-            <CreateTaskButton />
+            <CreateTaskButton/>
         </Header>
             <Task />
       </Container>

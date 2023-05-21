@@ -63,7 +63,7 @@ export const Checkbox = styled.input`
   }
   `;
 
-export const Task = styled.div`
+export const Task = styled.p`
   width: 80%;
 
   text-align: center;
