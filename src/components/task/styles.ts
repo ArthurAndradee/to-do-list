@@ -4,11 +4,10 @@ export const Container = styled.div`
   height: 15%;
   width: 96%;
 
-  margin-left: 2%;
-  margin-top: 2%;
+  margin: 1% 2%;
 
   border-radius: 25px;
-  box-shadow: 0px 0px 2px 0px black;
+  box-shadow: 0px 0px 2px 0px #7e25be;
 
   background-color: white;
 
@@ -62,7 +61,7 @@ export const Checkbox = styled.input`
   }
   `;
 
-export const Task = styled.p`
+export const Text = styled.p`
   width: 80%;
 
   text-align: center;

@@ -35,6 +35,8 @@ const Layout: React.FC = () => {
             }
         </Header>
             <Task />
+            <Task />
+            <Task />
       </Container>
   )
 }
