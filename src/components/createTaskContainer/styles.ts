@@ -1,33 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-height: 100%;
-width: 150%;
-
-margin-left: 30%;
-margin-top: 5%;
-
-border: 4px solid #7e25be;
-border-radius: 15px;
-
-background-color: #D8D8D8;
-`;
-
-export const Header = styled.div`
-height: 15%;
-width: 96%;
-
-margin-left: 2%;
-margin-top: 2%;
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-`;
-
-export const CreateTaskButton = styled.button`
+export const Container = styled.button`
   height: 60%;
-  width: 30%;
+  width: 60%;
 
   border-radius: 25px;
   box-shadow: 0px 0px 3px 0px black;
@@ -42,45 +17,14 @@ export const CreateTaskButton = styled.button`
   cursor: pointer;
   outline: inherit;
 
-  transition: all 300ms;
-
-  &:hover {
-        color: #7e25be;
-        background-color: white;
-    }
-`;
-
-export const Title = styled.div`
-  font-weight: 700;
-  font-size: 150%;
-`;
-
-export const CreateTaskContainer = styled.button`
-  height: 60% ;
-  width: 80%;
-
-  border-radius: 25px;
-  box-shadow: 0px 0px 3px 0px black;
-
-  background-color: #7e25be;;
-  font-size: 150%;
-  color: #FFFFFF;
-
-  border: none;
-  padding: 0;
-  font: inherit;
-  outline: inherit;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition: all 150ms;
 `;
 
 export const Input = styled.input`
     height: 26px;
-    width: 500px;
+    width: 330px;
 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -92,12 +36,13 @@ export const Input = styled.input`
     background: white;
 	border: none;
 	padding: 0;
+	cursor: pointer;
 	outline: inherit;
 
     text-indent: 8px;
 `;
 
-export const PushButton = styled.button`
+export const SearchButton = styled.button`
     height: 26px;
     width: 100px;
 

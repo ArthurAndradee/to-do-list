@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { useState } from 'react';
-
 import { 
   Container, 
   Header, 
@@ -9,7 +7,7 @@ import {
   Title,
   CreateTaskContainer,
   Input,
-  SearchButton
+  PushButton
  } 
   from './styles';
 
@@ -22,11 +20,19 @@ const Layout: React.FC = () => {
       <Container>
         <Header>
             <Title>My tasks</Title>
+            { showContainer ? 
             <CreateTaskContainer>
               <Input placeholder="Your task here"/>
-              <SearchButton>Push task</SearchButton>
+              <PushButton onClick={() => setShowContainer(false)}>
+                Push task
+              </PushButton>
             </CreateTaskContainer>
-            <CreateTaskButton>Add new Task +</CreateTaskButton>
+            : null }
+            { showContainer ? null : 
+              <CreateTaskButton onClick={() => setShowContainer(true)}>
+                Add new Task +
+              </CreateTaskButton>    
+            }
         </Header>
             <Task />
       </Container>
