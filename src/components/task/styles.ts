@@ -22,7 +22,6 @@ export const Checkbox = styled.input`
 
   margin-right: 3%;
 
-
   position: relative;
 
   width: 1.7em;

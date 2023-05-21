@@ -11,9 +11,6 @@ export const Container = styled.button`
   font-size: 150%;
   color: #FFFFFF;
 
-  float: right;
-
-
   border: none;
   padding: 0;
   font: inherit;

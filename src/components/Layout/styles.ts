@@ -19,4 +19,8 @@ width: 96%;
 
 margin-left: 2%;
 margin-top: 2%;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
 `;

@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Container, Header } from './styles';
 import CreateTaskButton from '../createTaskButton';
+
+import CreateTaskContainer from '../createTaskContainer';
+
 import Task from '../task';
 
 import Title from '../title';
@@ -11,6 +14,7 @@ const Layout: React.FC = () => {
       <Container>
         <Header>
             <Title />
+            <CreateTaskContainer />
             <CreateTaskButton/>
         </Header>
             <Task />
