@@ -15,7 +15,11 @@ const Task: React.FC = () => {
   return (
     <Container>
         <Checkbox type='checkbox' onClick={changeText}/>
-        <Text style={{textDecoration: showContainer ? "line-through" : "none"}}>Harder, Better, Faster, Stronger</Text>
+        <Text style={{
+          textDecoration: showContainer ? "line-through" : "none",
+          color: showContainer ? "rgba(108, 108, 108, 0.5)" : "black",
+        }}>
+        Harder, Better, Faster, Stronger</Text>
         <Trashbin>
           <FontAwesomeIcon icon={faTrashCan} />
         </Trashbin>
