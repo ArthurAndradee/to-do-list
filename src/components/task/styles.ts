@@ -35,6 +35,10 @@ export const Checkbox = styled.input`
   outline: 0;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(208, 208, 208, 0.5);
+  }
   
   transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
   &::before {
