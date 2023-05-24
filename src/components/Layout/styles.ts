@@ -62,7 +62,7 @@ export const CreateTaskContainer = styled.button`
   border-radius: 25px;
   box-shadow: 0px 0px 3px 0px black;
 
-  background-color: #7e25be;;
+  background-color: #7e25be;
   font-size: 150%;
   color: #FFFFFF;
 
@@ -80,7 +80,7 @@ export const CreateTaskContainer = styled.button`
 
 export const Input = styled.input`
     height: 26px;
-    width: 500px;
+    width: 575px;
 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
