@@ -69,6 +69,12 @@ export const Text = styled.p`
   width: 80%;
 
   text-align: center;
+
+  transition: all .2s ease-in-out; 
+
+  :hover { 
+  transform: scale(1.1); 
+  }
 `;
 
 export const Trashbin = styled.div`

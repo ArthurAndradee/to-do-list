@@ -47,12 +47,22 @@ export const CreateTaskButton = styled.button`
   &:hover {
         color: #7e25be;
         background-color: white;
-    }
+
+        transform: scale(1.1);
+  }
 `;
 
 export const Title = styled.div`
   font-weight: 700;
   font-size: 150%;
+
+  transition: all 300ms;
+
+  &:hover {
+    font-size: 200%;
+  }
+
+  cursor: default;
 `;
 
 export const CreateTaskContainer = styled.button`

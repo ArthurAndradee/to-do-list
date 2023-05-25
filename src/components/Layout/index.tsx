@@ -28,6 +28,7 @@ const Layout: React.FC = () => {
               </PushButton>
             </CreateTaskContainer>
             : null }
+            
             { showContainer ? null : 
               <CreateTaskButton onClick={() => setShowContainer(true)}>
                 Add new Task +
