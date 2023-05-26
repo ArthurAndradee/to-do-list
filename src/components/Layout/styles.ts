@@ -100,9 +100,9 @@ export const Input = styled.input`
     color: black;
 
     background: white;
-	border: none;
-	padding: 0;
-	outline: inherit;
+	  border: none;
+	  padding: 0;
+	  outline: inherit;
 
     text-indent: 8px;
 `;
@@ -119,15 +119,17 @@ export const PushButton = styled.button`
     box-shadow: 0px 0px 2px 0px white;
 
     border: 1px solid white;
-	color: white;
+	  color: white;
 
     background: none;
-	border: none;
+	  border: none;
 
     transition: all 300ms;
 
     &:hover {
         color: #7e25be;
         background-color: white;
+
+        width: 120px;
     }
 `;
