@@ -6,20 +6,21 @@ import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import { Container, Checkbox, Text, Trashbin } from './styles';
 
 const Task: React.FC = () => {
-  const [showContainer, setShowContainer] = React.useState(false)
+  const [showDecoration, setShowDecoration] = React.useState(false)
 
   function changeText() {
-    setShowContainer (current => !current)
+    setShowDecoration (current => !current)
   }
 
   return (
     <Container>
         <Checkbox type='checkbox' onClick={changeText}/>
         <Text style={{
-          textDecoration: showContainer ? "line-through" : "none",
-          color: showContainer ? "rgba(108, 108, 108, 0.5)" : "black",
+          textDecoration: showDecoration ? "line-through" : "none",
+          color: showDecoration ? "rgba(108, 108, 108, 0.5)" : "black",
         }}>
-        Harder, Better, Faster, Stronger</Text>
+          task here
+        </Text>
         <Trashbin>
           <FontAwesomeIcon icon={faTrashCan} />
         </Trashbin>
