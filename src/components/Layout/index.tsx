@@ -19,7 +19,7 @@ const Layout: React.FC = () => {
   return (
       <Container>
         <Header>
-            <Title>My tasks</Title>
+            <Title>⠀My tasks</Title>
             { showContainer ? 
             <CreateTaskContainer>
               <Input placeholder="Your task here"/>
