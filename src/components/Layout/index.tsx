@@ -17,30 +17,38 @@ import {
   Trashbin
  } 
   from './styles';
-
-import Task from '../task';
+import { Task } from 'styled-icons/boxicons-regular';
 
 const Layout: React.FC = () => {
   const [showContainer, setShowContainer] = React.useState(false)
 
   const [showDecoration, setShowDecoration] = React.useState(false)
-
-  function changeText() {
-    setShowDecoration (current => !current)
-  }
-
+  
   const [message, setMessage] = React.useState('');
 
   const [updated, setUpdated] = React.useState(message);
 
+  const changeText = () => {
+    setShowDecoration (current => !current)
+  }
+
   const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setMessage(event.target.value);
   };
-
+  
   const handleClick = () => {
-    setUpdated(message);
     setShowContainer(true)
   };
+  
+  const handleOtherClick = () => {
+    setUpdated(message);
+    setShowContainer(false)
+
+    React.createElement(
+      "div",
+      { className: "red" },
+    )
+  };  
 
   return (
       <Container>
@@ -53,7 +61,7 @@ const Layout: React.FC = () => {
                 onChange={handleChange}
                 value={message}
                 />
-              <PushButton onClick={() => setShowContainer(false)}>
+              <PushButton onClick={handleOtherClick}>
                 Push task
               </PushButton>
             </CreateTaskContainer>
@@ -71,7 +79,7 @@ const Layout: React.FC = () => {
             textDecoration: showDecoration ? "line-through" : "none",
             color: showDecoration ? "rgba(108, 108, 108, 0.5)" : "black",
           }}>
-            task here
+            {updated}
           </Text>
           <Trashbin>
             <FontAwesomeIcon icon={faTrashCan} />
