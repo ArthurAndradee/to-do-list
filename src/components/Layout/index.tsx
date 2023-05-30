@@ -43,11 +43,6 @@ const Layout: React.FC = () => {
   const handleOtherClick = () => {
     setUpdated(message);
     setShowContainer(false)
-
-    React.createElement(
-      "div",
-      { className: "red" },
-    )
   };  
 
   return (

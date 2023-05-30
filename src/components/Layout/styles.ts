@@ -7,10 +7,16 @@ width: 150%;
 margin-left: 30%;
 margin-top: 5%;
 
-border: 4px solid #7e25be;
+border: 4px solid #4F0DA8;
 border-radius: 15px;
 
 background-color: #D8D8D8;
+
+transition: all 300ms;
+
+&:hover {
+  border: 4px solid #7e25be;
+}
 `;
 
 export const Header = styled.div`
